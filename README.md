@@ -26,5 +26,8 @@
 * Setup a Flask app that reference the plot saved in S3
 * Run this app on an EC2 instance non-stop
 
+## Table Structure
+  ![](/table.png)
+
 ## output
   http://34.207.114.54:80
