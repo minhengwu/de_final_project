@@ -97,7 +97,8 @@ def draw():
     plt.plot(xx, yy_up, 'k--')
     plt.scatter(clf.support_vectors_[:, 0], clf.support_vectors_[:, 1], s=10,
                 facecolors='none', zorder=10)
-    plt.scatter(new_x[:, 0], new_x[:, 1], c=y, zorder=10, cmap=plt.cm.Paired)
+    plt.scatter(new_x[:, 0], new_x[:, 1], c=y, zorder=10, cmap=plt.cm.Paired,
+                label=['blue:SFO', 'brown:SEA'])
     plt.axis('tight')
     x_min = -1
     x_max = 1
@@ -112,6 +113,7 @@ def draw():
     plt.title('precision:{}'.format(clf.score(new_x, y)))
     x1, x2, y1, y2 = plt.axis()
     plt.axis((x1, x2, x1, x2))
+    plt.legend(loc='upper left')
     a = get_date()
     plt.savefig('%s.png' % (a))
 
