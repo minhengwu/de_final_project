@@ -1,4 +1,4 @@
-# Weather_Difference_Between_SFO/Seattle
+# Weather_Difference_Between_SFO/SEA
 
 ## API used:
   http://openweathermap.org/api
