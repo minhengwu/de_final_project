@@ -1,4 +1,4 @@
 #! /bin/bash
 
-sudo python -m pip install pip pandas scipy sklearn boto
-sudo python -m pip install matplotlib
+sudo yum install -y python27-pip python27-devel
+sudo python -m pip install pip pyyaml pandas scipy matplotlib boto sklearn -U
