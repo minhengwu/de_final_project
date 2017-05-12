@@ -3,6 +3,8 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import explode
 from datetime import date
 from sklearn.decomposition import pca
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn import svm
